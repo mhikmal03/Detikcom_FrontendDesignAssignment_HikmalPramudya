@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="/assets/js/index.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="/assets/images/navbar-brand.png" alt="logo-detik">
+        <button class="border-0 navbar-button" id="navbar-button-icon">
+
+            <svg class="hamburger-icon border-0" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                viewBox="0 0 50 50" fill="none">
+                <g filter="url(#filter0_d_3040_147)">
+                    <rect x="4" y="3" width="42" height="42" rx="21" fill="white" fill-opacity="0.8"
+                        shape-rendering="crispEdges" />
+                    <path
+                        d="M20.5119 25.6166C22.063 25.6166 23.306 26.8718 23.306 28.4338V32.1839C23.306 33.7349 22.063 35 20.5119 35H16.7938C15.2537 35 13.9997 33.7349 13.9997 32.1839V28.4338C13.9997 26.8718 15.2537 25.6166 16.7938 25.6166H20.5119ZM33.2065 25.6166C34.7465 25.6166 36.0006 26.8718 36.0006 28.4338V32.1839C36.0006 33.7349 34.7465 35 33.2065 35H29.4883C27.9373 35 26.6942 33.7349 26.6942 32.1839V28.4338C26.6942 26.8718 27.9373 25.6166 29.4883 25.6166H33.2065ZM20.5119 12.9995C22.063 12.9995 23.306 14.2646 23.306 15.8167V19.5667C23.306 21.1288 22.063 22.3828 20.5119 22.3828H16.7938C15.2537 22.3828 13.9997 21.1288 13.9997 19.5667V15.8167C13.9997 14.2646 15.2537 12.9995 16.7938 12.9995H20.5119ZM33.2065 12.9995C34.7465 12.9995 36.0006 14.2646 36.0006 15.8167V19.5667C36.0006 21.1288 34.7465 22.3828 33.2065 22.3828H29.4883C27.9373 22.3828 26.6942 21.1288 26.6942 19.5667V15.8167C26.6942 14.2646 27.9373 12.9995 29.4883 12.9995H33.2065Z"
+                        fill="#20409A" />
+                </g>
+                <defs>
+                    <filter id="filter0_d_3040_147" x="0" y="0" width="50" height="50" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha" />
+                        <feOffset dy="1" />
+                        <feGaussianBlur stdDeviation="2" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3040_147" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3040_147" result="shape" />
+                    </filter>
+                </defs>
+            </svg>
+
+            <div class="close-icon hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 50 50" fill="none">
+                    <g filter="url(#filter0_d_780_1449)">
+                        <rect x="4" y="3" width="42" height="42" rx="21" fill="white" fill-opacity="0.8"
+                            shape-rendering="crispEdges" />
+                        <path d="M33.0086 16.0066L17.0078 32.0074" stroke="#20409A" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M33.0139 32.0176L16.9998 16.0001" stroke="#20409A" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_780_1449" x="0" y="0" width="50" height="50" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="1" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_780_1449" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_780_1449"
+                                result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+        </button>
+        <div class="navbar-items">
+            <h1>Home</h1>
+            <h1>Tentang Acara</h1>
+            <h1>Galeri</h1>
+            <h1>Berita</h1>
+            <a href="https://event.detik.com/" class="registration-button">Registrasi</a>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <!-- navbar -->
+        <!-- <nav class="navbar navbar-expand-lg navbar">
+            <div class="navbar-brand" href="#">
+                <img src="/assets//images/navbar-brand.png" alt="">
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" id="navbarTogglerBtn">
+                <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                    viewBox="0 0 50 50" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                        <g filter="url(#filter0_d_3012_826)">
+                            <rect x="4" y="3" width="42" height="42" rx="21" fill="white" fill-opacity="0.8"
+                                shape-rendering="crispEdges" />
+                            <path
+                                d="M20.5119 25.6166C22.063 25.6166 23.306 26.8718 23.306 28.4338V32.1839C23.306 33.7349 22.063 35 20.5119 35H16.7938C15.2537 35 13.9997 33.7349 13.9997 32.1839V28.4338C13.9997 26.8718 15.2537 25.6166 16.7938 25.6166H20.5119ZM33.2065 25.6166C34.7465 25.6166 36.0006 26.8718 36.0006 28.4338V32.1839C36.0006 33.7349 34.7465 35 33.2065 35H29.4883C27.9373 35 26.6942 33.7349 26.6942 32.1839V28.4338C26.6942 26.8718 27.9373 25.6166 29.4883 25.6166H33.2065ZM20.5119 12.9995C22.063 12.9995 23.306 14.2646 23.306 15.8167V19.5667C23.306 21.1288 22.063 22.3828 20.5119 22.3828H16.7938C15.2537 22.3828 13.9997 21.1288 13.9997 19.5667V15.8167C13.9997 14.2646 15.2537 12.9995 16.7938 12.9995H20.5119ZM33.2065 12.9995C34.7465 12.9995 36.0006 14.2646 36.0006 15.8167V19.5667C36.0006 21.1288 34.7465 22.3828 33.2065 22.3828H29.4883C27.9373 22.3828 26.6942 21.1288 26.6942 19.5667V15.8167C26.6942 14.2646 27.9373 12.9995 29.4883 12.9995H33.2065Z"
+                                fill="#20409A" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d_3012_826" x="0" y="0" width="50" height="50"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dy="1" />
+                                <feGaussianBlur stdDeviation="2" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3012_826" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3012_826"
+                                    result="shape" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </svg>
+                <svg class="close-icon d-none" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                    viewBox="0 0 50 50" fill="none">
+                    <g filter="url(#filter0_d_780_1449)">
+                        <rect x="4" y="3" width="42" height="42" rx="21" fill="white" fill-opacity="0.8"
+                            shape-rendering="crispEdges" />
+                        <path d="M33.0086 16.0066L17.0078 32.0074" stroke="#20409A" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M33.0139 32.0176L16.9998 16.0001" stroke="#20409A" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_780_1449" x="0" y="0" width="50" height="50" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="1" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_780_1449" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_780_1449"
+                                result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+            </button>
+
+            <div class="collapse navbar-collapse border-0" id="navbarSupportedContent">
+                    <a href="">Home</a>
+                    <a href="">Tentang Acara</a>
+                    <a href="">Galeri</a>
+                    <a href="">Berita</a>
+                <button class="registration-button d-flex justify-content-center align-items-center border-0">
+                    Registrasi
+                </button>
+
+
+            </div>
+        </nav> -->
+        <!-- custom-navbar -->
+
+
+        <div class="logo-event">
+            <img src="/assets/images/logo-event 2.png" alt="">
+            <button class="button-tentang-acara">
+                TENTANG ACARA
+            </button>
+        </div>
+    </section>
+
+    <section class="special-performance">
+        <div class="event">
+            <div class="card card-with-map border-0">
+                <img src="/assets/images/map 1.png" alt="event-map">
+                <div class="content">
+                    <h1>10K FUN RUN</h1>
+                    <p>Dimulai pukul 6 pagi, nikmati pemandangan kota di pagi hari dimulai dari Bundaran HI hingga
+                        Patung Pemuda Membangun di Senayan lalu kembali lagi ke Bundaran HI!</p>
+                </div>
+            </div>
+            <div class="no-map-event">
+                <div class="card border-0">
+                    <div class="content">
+                        <h1>GRATIS DAN BERHADIAH</h1>
+                        <p>Pendaftaran gratis! Ajak keluarga anda dan menangkan hadiah total puluhan juta rupiah
+                            doorprize
+                            menarik!</p>
+                    </div>
+                </div>
+                <div class="card border-0">
+                    <div class="content">
+                        <h1>50+ TENANT BAZZAR </h1>
+                        <p>Dapatkan promo menarik pada booth-booth tenant bazzar Sudirman Run 2023 mulai dari F&B hingga
+                            fashion</p>
+                    </div>
+                </div>
+                <div class="card card-image2 border-0">
+                    <img class="special-image" src="/assets/images/spec2.png" alt="">
+                    <div class="content">
+                        <h1>SPECIAL PERFORMANCE</h1>
+                        <p>Saksikan penampilan dari RAN, Ayu Ting Ting, Diskoria, serta hiburan lainnya!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <a href="https://event.detik.com/" class="daftar-sekarang-button">
+            DAFTAR SEKARANG
+        </a>
+    </section>
+
+    <section class="support-by-slider">
+        <h1>DIDUKUNG OLEH</h1>
+        <div class="slider">
+            <div class="slide-track" id="slideTrack">
+                <div class="slide">
+                    <img src="/assets/images/alpha-jwc 1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/assets/images/alpha-jwc 2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/assets/images/alpha-jwc 3.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/assets/images/alpha-jwc 4.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/assets/images/alpha-jwc 5.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/assets/images/alpha-jwc 6.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/assets/images/alpha-jwc 7.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/assets/images/alpha-jwc 8.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <h1 class="galeri-sudirman-run">GALERI SUDIRMAN RUN 2022</h1>
+    <section class="sudirman-gallery">
+        <div class="carousel slide" id="carouselDemo" data-bs-touch="false" data-bs-interval="false">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="/assets/images/carousel1.png" class="w-100">
+                </div>
+
+                <div class="carousel-item ">
+                    <img src="/assets/images/carousel2.png" class="w-100">
+                </div>
+
+                <div class="carousel-item ">
+                    <img src="/assets/images/carousel3.png" class="w-100">
+                </div>
+
+                <div class="carousel-item ">
+                    <img src="/assets/images/carousel4.png" class="w-100">
+                </div>
+
+
+
+            </div>
+
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselDemo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDemo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button> -->
+
+            <div class="option">
+                <button type="button" class="active border-0" data-bs-target="#carouselDemo" data-bs-slide-to="0">
+                    <img src="/assets/images/carousel1.png" onclick="logCarouselItem(0)" style="filter: grayscale(0%)">
+                </button>
+                <button type="button" class="active border-0" data-bs-target="#carouselDemo" data-bs-slide-to="1">
+                    <img src="/assets/images/carousel2.png" onclick="logCarouselItem(1)"
+                        style="filter: grayscale(100%)">
+                </button>
+                <button type="button" class="active border-0" data-bs-target="#carouselDemo" data-bs-slide-to="2">
+                    <img src="/assets/images/carousel3.png" onclick="logCarouselItem(2)"
+                        style="filter: grayscale(100%)">
+                </button>
+                <button type="button" class="active border-0" data-bs-target="#carouselDemo" data-bs-slide-to="3">
+                    <img src="/assets/images/carousel4.png" onclick="logCarouselItem(3)"
+                        style="filter: grayscale(100%)">
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="related-article">
+        <h1 class="artikel-terkait-bold">Artikel Terkait</h1>
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Artikel</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Foto</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Video</button>
+            </li>
+
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active card-article-container" id="pills-home" role="tabpanel"
+                aria-labelledby="pills-home-tab" tabindex="0">
+                <div class="card-article">
+                    <!-- <img src="/assets/images/thumbnail-artikel-1.png" alt=""> -->
+                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-1.png)"></div>
+                    <div class="content">
+                        <h1>Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</h1>
+                        <p>Sabtu, 25 Nov 2023 20:00 WIB</p>
+                    </div>
+                </div>
+                <div class="card-article">
+                    <!-- <img src="/assets/images/thumbnail-artikel-2.png" alt=""> -->
+                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-2.png)"></div>
+                    <div class="content">
+                        <h1>Edukasi Lingkungan Hidup Bonus Sehat di 'Misi Lestari 2023: See Nature</h1>
+                        <p>Selasa, 28 Nov 2023 07:42 WIB</p>
+                    </div>
+                </div>
+                <div class="card-article">
+                    <!-- <img src="/assets/images/thumbnail-artikel-3.png" alt=""> -->
+                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-3.png)"></div>
+                    <div class="content">
+                        <h1>Gokil! Puluhan Ribu Orang Ramaikan Pertamina Eco RunFest 2023</h1>
+                        <p>Minggu, 26 Nov 2023 13:04 WIB</p>
+                    </div>
+                </div>
+                <div class="card-article">
+                    <!-- <img src="/assets/images/thumbnail-artikel-4.png" alt=""> -->
+                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-4.png)"></div>
+                    <div class="content">
+                        <h1>Kelar Lari di CT Arsa Charity Fun Run, 'Recharge' Energi Nonton Maliq & D'essentials</h1>
+                        <p>Sabtu, 18 Nov 2023 17:39 WIB</p>
+                    </div>
+                </div>
+    
+                <div class="card-article">
+                    <!-- <img src="/assets/images/thumbnail-artikel-6.png" alt=""> -->
+                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-5.png)"></div>
+                    <div class="content">
+                        <h1>CT Arsa Charity Fun Run 2023 Bertabur Emas</h1>
+                        <p>Kamis, 16 Nov 2023 16:34 WIB</p>
+                    </div>
+                </div>
+
+                <div class="card-article">
+                    <!-- <img src="/assets/images/thumbnail-artikel-6.png" alt=""> -->
+                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-6.png)"></div>
+                    <div class="content">
+                        <h1>BTN Jakarta Run 2023 Dorong dan Geliatkan Sport Tourism Jakarta</h1>
+                        <p>Minggu, 12 Nov 2023 11:55 WIB</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <a href="https://www.detik.com/search/searchall?query=fun+run&siteid=2" class="daftar-sekarang-button">
+            LIHAT LEBIH BANYAK
+        </a>
+    </section>
+
+
+
+    <footer>
+        <div class="logo-event-footer">
+            <img src="/assets/images/logo-event 2.png" alt="">
+        </div>
+        <div class="desc-social-row">
+            <div class="description">
+                <h5>Event olahraga lari sejauh 10 kilometer yang diselenggarakan oleh Detikhealth secara gratis untuk
+                    masyarakat Indonesia. Ajak keluarga dan kerabat anda untuk ikut keseruan Sudirman Run 2023 lalu
+                    menangkan hadiah utama serta doorprize dengan total puluhan juta rupiah</h5>
+            </div>
+            <div class="social">
+                <p>Connect With Us</p>
+                <div class="social-icon">
+                    <img src="/assets/images/facebook.svg" alt="">
+                    <img src="/assets/images/twitter.svg" alt="">
+                    <img src="/assets/images/instagram.svg" alt="">
+                    <img src="/assets/images/linkedin.svg" alt="">
+                    <img src="/assets/images/youtube.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="line">
+
+        </div>
+        <p>Copyright @ 2023 detikcom. All right reserved</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

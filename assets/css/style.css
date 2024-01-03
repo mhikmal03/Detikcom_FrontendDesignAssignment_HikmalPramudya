@@ -876,3 +876,23 @@ footer p {
         background-position: center;
     }
 }
+
+
+@media (max-width: 380px) {
+    .related-article .nav {
+        font-size: 12px;
+    }
+
+    .card-article {
+        align-items: start;
+    }
+
+    .related-article .nav-link {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .related-article .nav-link.active {
+        padding: 10px;
+    }
+}

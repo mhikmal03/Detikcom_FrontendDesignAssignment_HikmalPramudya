@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log("Current active index:", currentIndex);
     });
     var defaultButton = document.querySelector('.option button[data-bs-slide-to="0"]');
-        defaultButton.classList.add('active');
+    defaultButton.classList.add('active');
 });
 
 
@@ -55,6 +55,44 @@ function logCarouselItem(index) {
     var clickedButton = buttons[index];
     clickedButton.classList.add('active');
     clickedButton.querySelector('img').style.filter = 'grayscale(0%)';
+}
+
+
+
+
+// related-article-js
+
+document.addEventListener("DOMContentLoaded", function () {
+    hideProfile();
+});
+
+
+function showProfile() {
+    if (window.innerWidth > 1200) {
+        console.log('Tombol Foto diklik');
+        var commonCardContainers = document.getElementsByClassName('common-card-container');
+
+        for (var i = 0; i < commonCardContainers.length; i++) {
+            var profileIcons = commonCardContainers[i].getElementsByClassName('profile-icon');
+
+            for (var j = 0; j < profileIcons.length; j++) {
+                profileIcons[j].style.display = 'flex';
+            }
+        }
+    }
+}
+
+function hideProfile() {
+        console.log('Tombol Artikel diklik');
+        var commonCardContainers = document.getElementsByClassName('common-card-container');
+
+        for (var i = 0; i < commonCardContainers.length; i++) {
+            var profileIcons = commonCardContainers[i].getElementsByClassName('profile-icon');
+
+            for (var j = 0; j < profileIcons.length; j++) {
+                profileIcons[j].style.display = 'none';
+            }
+        }
 }
 
 

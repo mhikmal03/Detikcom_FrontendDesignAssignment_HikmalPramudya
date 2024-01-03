@@ -265,13 +265,19 @@
 
             </div>
 
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselDemo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+            <button class="carousel-control-prev carousel-control" type="button" data-bs-target="#carouselDemo" data-bs-slide="prev">
+                <!-- <span class="carousel-control-prev-icon"></span> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none">
+                    <path d="M34.5 5.75L35.3043 5.76105C50.8029 6.18747 63.25 18.899 63.25 34.5C63.25 50.3412 50.37 63.25 34.5 63.25C18.6587 63.25 5.75 50.3412 5.75 34.5C5.75 18.63 18.6587 5.75 34.5 5.75ZM40.1925 23C39.33 22.1375 37.9787 22.1375 37.145 23L27.1112 32.9762C26.7087 33.3787 26.4787 33.925 26.4787 34.5C26.4787 35.075 26.7087 35.6212 27.1112 36.0237L37.145 46C37.5475 46.4312 38.0937 46.6325 38.64 46.6325C39.215 46.6325 39.7612 46.4312 40.1925 46C41.0262 45.1375 41.0262 43.7862 40.1637 42.9525L31.6825 34.5L40.1637 26.0475C41.0262 25.2137 41.0262 23.8337 40.1925 23Z" fill="white" fill-opacity="0.7"/>
+                  </svg>
             </button>
 
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselDemo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button> -->
+            <button class="carousel-control-next carousel-control" type="button" data-bs-target="#carouselDemo" data-bs-slide="next">
+                <!-- <span class="carousel-control-next-icon"></span> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none">
+                    <path d="M34.5 63.25L33.6957 63.239C18.1971 62.8125 5.75 50.101 5.75 34.5C5.75 18.6588 18.63 5.75001 34.5 5.75001C50.3412 5.75 63.25 18.6588 63.25 34.5C63.25 50.37 50.3413 63.25 34.5 63.25ZM28.8075 46C29.67 46.8625 31.0213 46.8625 31.855 46L41.8887 36.0238C42.2912 35.6213 42.5212 35.075 42.5212 34.5C42.5212 33.925 42.2912 33.3788 41.8887 32.9763L31.855 23C31.4525 22.5688 30.9063 22.3675 30.36 22.3675C29.785 22.3675 29.2388 22.5688 28.8075 23C27.9738 23.8625 27.9737 25.2138 28.8362 26.0475L37.3175 34.5L28.8362 42.9525C27.9737 43.7863 27.9738 45.1663 28.8075 46Z" fill="white" fill-opacity="0.7"/>
+                  </svg>
+            </button>
 
             <div class="option">
                 <button type="button" class="active border-0" data-bs-target="#carouselDemo" data-bs-slide-to="0">
@@ -295,63 +301,129 @@
     </section>
 
 
+
     <section class="related-article">
         <h1 class="artikel-terkait-bold">Artikel Terkait</h1>
         <ul class="nav nav-pills" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Artikel</button>
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"
+                    onclick="hideProfile()">Artikel</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Foto</button>
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"
+                    onclick="showProfile()">Foto</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
                     type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Video</button>
             </li>
 
         </ul>
 
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active card-article-container" id="pills-home" role="tabpanel"
+            <div class="tab-pane fade show active card-article-container common-card-container" id="pills-home" role="tabpanel"
                 aria-labelledby="pills-home-tab" tabindex="0">
-                <div class="card-article">
+                <div class="card-article" id="article1">
+                    <div id="profile-icon" class="profile-icon hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                            <path
+                                d="M7.49982 5.87679C8.15607 5.87679 8.77482 6.13276 9.23732 6.59475C9.69982 7.06297 9.95607 7.68104 9.95607 8.33032C9.94982 9.01081 9.67482 9.62263 9.23107 10.0659C8.78732 10.5091 8.17482 10.7838 7.49982 10.7838C6.84357 10.7838 6.23107 10.5279 5.76232 10.0659C5.29982 9.59766 5.04357 8.98584 5.04357 8.33032C5.03732 7.68104 5.29357 7.06922 5.75607 6.60099C6.22482 6.13276 6.84357 5.87679 7.49982 5.87679ZM7.49982 6.81325C7.09357 6.81325 6.71232 6.96933 6.41857 7.26275C6.13107 7.54993 5.97482 7.93076 5.98107 8.32407V8.33032C5.98107 8.73612 6.13732 9.11694 6.42482 9.40412C6.71232 9.6913 7.09357 9.84738 7.49982 9.84738C8.33732 9.84738 9.01232 9.16689 9.01857 8.33032C9.01857 7.92452 8.86232 7.54369 8.57482 7.25651C8.28732 6.96933 7.90607 6.81325 7.49982 6.81325ZM11.0061 5.72696C11.3186 5.72696 11.5748 5.98292 11.5748 6.29508C11.5748 6.60723 11.3186 6.85695 11.0061 6.85695C10.6936 6.85695 10.4436 6.60723 10.4436 6.29508C10.4436 5.98292 10.6936 5.72696 11.0061 5.72696Z"
+                                fill="white" />
+                            <path opacity="0.5"
+                                d="M10.9 3.89775L10.8375 3.76041C10.6687 3.40455 10.475 2.99251 10.3562 2.75527C10.0687 2.1934 9.575 1.88124 8.96875 1.875H6.025C5.41875 1.88124 4.93125 2.1934 4.64375 2.75527C4.51875 3.00499 4.30625 3.45449 4.13125 3.82284L4.09375 3.89775C4.075 3.9477 4.025 3.97267 3.975 3.97267C2.46875 3.97267 1.25 5.19631 1.25 6.69464V10.403C1.25 11.9014 2.46875 13.125 3.975 13.125H11.025C12.525 13.125 13.75 11.9014 13.75 10.403V6.69464C13.75 5.19631 12.525 3.97267 11.025 3.97267C10.9688 3.97267 10.925 3.94145 10.9 3.89775Z"
+                                fill="white" />
+                        </svg>
+                        <p>5 Foto</p>
+                    </div>
                     <!-- <img src="/assets/images/thumbnail-artikel-1.png" alt=""> -->
-                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-1.png)"></div>
+                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-1.png)">
+                    </div>
                     <div class="content">
                         <h1>Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</h1>
                         <p>Sabtu, 25 Nov 2023 20:00 WIB</p>
                     </div>
                 </div>
-                <div class="card-article">
+
+                <div class="card-article" id="article2">
+                    <div id="profile-icon" class="profile-icon hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                            <path
+                                d="M7.49982 5.87679C8.15607 5.87679 8.77482 6.13276 9.23732 6.59475C9.69982 7.06297 9.95607 7.68104 9.95607 8.33032C9.94982 9.01081 9.67482 9.62263 9.23107 10.0659C8.78732 10.5091 8.17482 10.7838 7.49982 10.7838C6.84357 10.7838 6.23107 10.5279 5.76232 10.0659C5.29982 9.59766 5.04357 8.98584 5.04357 8.33032C5.03732 7.68104 5.29357 7.06922 5.75607 6.60099C6.22482 6.13276 6.84357 5.87679 7.49982 5.87679ZM7.49982 6.81325C7.09357 6.81325 6.71232 6.96933 6.41857 7.26275C6.13107 7.54993 5.97482 7.93076 5.98107 8.32407V8.33032C5.98107 8.73612 6.13732 9.11694 6.42482 9.40412C6.71232 9.6913 7.09357 9.84738 7.49982 9.84738C8.33732 9.84738 9.01232 9.16689 9.01857 8.33032C9.01857 7.92452 8.86232 7.54369 8.57482 7.25651C8.28732 6.96933 7.90607 6.81325 7.49982 6.81325ZM11.0061 5.72696C11.3186 5.72696 11.5748 5.98292 11.5748 6.29508C11.5748 6.60723 11.3186 6.85695 11.0061 6.85695C10.6936 6.85695 10.4436 6.60723 10.4436 6.29508C10.4436 5.98292 10.6936 5.72696 11.0061 5.72696Z"
+                                fill="white" />
+                            <path opacity="0.5"
+                                d="M10.9 3.89775L10.8375 3.76041C10.6687 3.40455 10.475 2.99251 10.3562 2.75527C10.0687 2.1934 9.575 1.88124 8.96875 1.875H6.025C5.41875 1.88124 4.93125 2.1934 4.64375 2.75527C4.51875 3.00499 4.30625 3.45449 4.13125 3.82284L4.09375 3.89775C4.075 3.9477 4.025 3.97267 3.975 3.97267C2.46875 3.97267 1.25 5.19631 1.25 6.69464V10.403C1.25 11.9014 2.46875 13.125 3.975 13.125H11.025C12.525 13.125 13.75 11.9014 13.75 10.403V6.69464C13.75 5.19631 12.525 3.97267 11.025 3.97267C10.9688 3.97267 10.925 3.94145 10.9 3.89775Z"
+                                fill="white" />
+                        </svg>
+                        <p>5 Foto</p>
+                    </div>
                     <!-- <img src="/assets/images/thumbnail-artikel-2.png" alt=""> -->
-                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-2.png)"></div>
+                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-2.png)">
+                    </div>
                     <div class="content">
                         <h1>Edukasi Lingkungan Hidup Bonus Sehat di 'Misi Lestari 2023: See Nature</h1>
                         <p>Selasa, 28 Nov 2023 07:42 WIB</p>
                     </div>
                 </div>
+
                 <div class="card-article">
+                    <div id="profile-icon" class="profile-icon hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                            <path
+                                d="M7.49982 5.87679C8.15607 5.87679 8.77482 6.13276 9.23732 6.59475C9.69982 7.06297 9.95607 7.68104 9.95607 8.33032C9.94982 9.01081 9.67482 9.62263 9.23107 10.0659C8.78732 10.5091 8.17482 10.7838 7.49982 10.7838C6.84357 10.7838 6.23107 10.5279 5.76232 10.0659C5.29982 9.59766 5.04357 8.98584 5.04357 8.33032C5.03732 7.68104 5.29357 7.06922 5.75607 6.60099C6.22482 6.13276 6.84357 5.87679 7.49982 5.87679ZM7.49982 6.81325C7.09357 6.81325 6.71232 6.96933 6.41857 7.26275C6.13107 7.54993 5.97482 7.93076 5.98107 8.32407V8.33032C5.98107 8.73612 6.13732 9.11694 6.42482 9.40412C6.71232 9.6913 7.09357 9.84738 7.49982 9.84738C8.33732 9.84738 9.01232 9.16689 9.01857 8.33032C9.01857 7.92452 8.86232 7.54369 8.57482 7.25651C8.28732 6.96933 7.90607 6.81325 7.49982 6.81325ZM11.0061 5.72696C11.3186 5.72696 11.5748 5.98292 11.5748 6.29508C11.5748 6.60723 11.3186 6.85695 11.0061 6.85695C10.6936 6.85695 10.4436 6.60723 10.4436 6.29508C10.4436 5.98292 10.6936 5.72696 11.0061 5.72696Z"
+                                fill="white" />
+                            <path opacity="0.5"
+                                d="M10.9 3.89775L10.8375 3.76041C10.6687 3.40455 10.475 2.99251 10.3562 2.75527C10.0687 2.1934 9.575 1.88124 8.96875 1.875H6.025C5.41875 1.88124 4.93125 2.1934 4.64375 2.75527C4.51875 3.00499 4.30625 3.45449 4.13125 3.82284L4.09375 3.89775C4.075 3.9477 4.025 3.97267 3.975 3.97267C2.46875 3.97267 1.25 5.19631 1.25 6.69464V10.403C1.25 11.9014 2.46875 13.125 3.975 13.125H11.025C12.525 13.125 13.75 11.9014 13.75 10.403V6.69464C13.75 5.19631 12.525 3.97267 11.025 3.97267C10.9688 3.97267 10.925 3.94145 10.9 3.89775Z"
+                                fill="white" />
+                        </svg>
+                        <p>5 Foto</p>
+                    </div>
                     <!-- <img src="/assets/images/thumbnail-artikel-3.png" alt=""> -->
-                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-3.png)"></div>
+                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-3.png)">
+                    </div>
                     <div class="content">
                         <h1>Gokil! Puluhan Ribu Orang Ramaikan Pertamina Eco RunFest 2023</h1>
                         <p>Minggu, 26 Nov 2023 13:04 WIB</p>
                     </div>
                 </div>
+
                 <div class="card-article">
+                    <div id="profile-icon" class="profile-icon hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                            <path
+                                d="M7.49982 5.87679C8.15607 5.87679 8.77482 6.13276 9.23732 6.59475C9.69982 7.06297 9.95607 7.68104 9.95607 8.33032C9.94982 9.01081 9.67482 9.62263 9.23107 10.0659C8.78732 10.5091 8.17482 10.7838 7.49982 10.7838C6.84357 10.7838 6.23107 10.5279 5.76232 10.0659C5.29982 9.59766 5.04357 8.98584 5.04357 8.33032C5.03732 7.68104 5.29357 7.06922 5.75607 6.60099C6.22482 6.13276 6.84357 5.87679 7.49982 5.87679ZM7.49982 6.81325C7.09357 6.81325 6.71232 6.96933 6.41857 7.26275C6.13107 7.54993 5.97482 7.93076 5.98107 8.32407V8.33032C5.98107 8.73612 6.13732 9.11694 6.42482 9.40412C6.71232 9.6913 7.09357 9.84738 7.49982 9.84738C8.33732 9.84738 9.01232 9.16689 9.01857 8.33032C9.01857 7.92452 8.86232 7.54369 8.57482 7.25651C8.28732 6.96933 7.90607 6.81325 7.49982 6.81325ZM11.0061 5.72696C11.3186 5.72696 11.5748 5.98292 11.5748 6.29508C11.5748 6.60723 11.3186 6.85695 11.0061 6.85695C10.6936 6.85695 10.4436 6.60723 10.4436 6.29508C10.4436 5.98292 10.6936 5.72696 11.0061 5.72696Z"
+                                fill="white" />
+                            <path opacity="0.5"
+                                d="M10.9 3.89775L10.8375 3.76041C10.6687 3.40455 10.475 2.99251 10.3562 2.75527C10.0687 2.1934 9.575 1.88124 8.96875 1.875H6.025C5.41875 1.88124 4.93125 2.1934 4.64375 2.75527C4.51875 3.00499 4.30625 3.45449 4.13125 3.82284L4.09375 3.89775C4.075 3.9477 4.025 3.97267 3.975 3.97267C2.46875 3.97267 1.25 5.19631 1.25 6.69464V10.403C1.25 11.9014 2.46875 13.125 3.975 13.125H11.025C12.525 13.125 13.75 11.9014 13.75 10.403V6.69464C13.75 5.19631 12.525 3.97267 11.025 3.97267C10.9688 3.97267 10.925 3.94145 10.9 3.89775Z"
+                                fill="white" />
+                        </svg>
+                        <p>5 Foto</p>
+                    </div>
                     <!-- <img src="/assets/images/thumbnail-artikel-4.png" alt=""> -->
-                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-4.png)"></div>
+                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-4.png)">
+                    </div>
                     <div class="content">
                         <h1>Kelar Lari di CT Arsa Charity Fun Run, 'Recharge' Energi Nonton Maliq & D'essentials</h1>
                         <p>Sabtu, 18 Nov 2023 17:39 WIB</p>
                     </div>
                 </div>
-    
+
                 <div class="card-article">
+                    <div id="profile-icon" class="profile-icon hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                            <path
+                                d="M7.49982 5.87679C8.15607 5.87679 8.77482 6.13276 9.23732 6.59475C9.69982 7.06297 9.95607 7.68104 9.95607 8.33032C9.94982 9.01081 9.67482 9.62263 9.23107 10.0659C8.78732 10.5091 8.17482 10.7838 7.49982 10.7838C6.84357 10.7838 6.23107 10.5279 5.76232 10.0659C5.29982 9.59766 5.04357 8.98584 5.04357 8.33032C5.03732 7.68104 5.29357 7.06922 5.75607 6.60099C6.22482 6.13276 6.84357 5.87679 7.49982 5.87679ZM7.49982 6.81325C7.09357 6.81325 6.71232 6.96933 6.41857 7.26275C6.13107 7.54993 5.97482 7.93076 5.98107 8.32407V8.33032C5.98107 8.73612 6.13732 9.11694 6.42482 9.40412C6.71232 9.6913 7.09357 9.84738 7.49982 9.84738C8.33732 9.84738 9.01232 9.16689 9.01857 8.33032C9.01857 7.92452 8.86232 7.54369 8.57482 7.25651C8.28732 6.96933 7.90607 6.81325 7.49982 6.81325ZM11.0061 5.72696C11.3186 5.72696 11.5748 5.98292 11.5748 6.29508C11.5748 6.60723 11.3186 6.85695 11.0061 6.85695C10.6936 6.85695 10.4436 6.60723 10.4436 6.29508C10.4436 5.98292 10.6936 5.72696 11.0061 5.72696Z"
+                                fill="white" />
+                            <path opacity="0.5"
+                                d="M10.9 3.89775L10.8375 3.76041C10.6687 3.40455 10.475 2.99251 10.3562 2.75527C10.0687 2.1934 9.575 1.88124 8.96875 1.875H6.025C5.41875 1.88124 4.93125 2.1934 4.64375 2.75527C4.51875 3.00499 4.30625 3.45449 4.13125 3.82284L4.09375 3.89775C4.075 3.9477 4.025 3.97267 3.975 3.97267C2.46875 3.97267 1.25 5.19631 1.25 6.69464V10.403C1.25 11.9014 2.46875 13.125 3.975 13.125H11.025C12.525 13.125 13.75 11.9014 13.75 10.403V6.69464C13.75 5.19631 12.525 3.97267 11.025 3.97267C10.9688 3.97267 10.925 3.94145 10.9 3.89775Z"
+                                fill="white" />
+                        </svg>
+                        <p>5 Foto</p>
+                    </div>
                     <!-- <img src="/assets/images/thumbnail-artikel-6.png" alt=""> -->
-                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-5.png)"></div>
+                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-5.png)">
+                    </div>
                     <div class="content">
                         <h1>CT Arsa Charity Fun Run 2023 Bertabur Emas</h1>
                         <p>Kamis, 16 Nov 2023 16:34 WIB</p>
@@ -359,8 +431,20 @@
                 </div>
 
                 <div class="card-article">
+                    <div id="profile-icon" class="profile-icon hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                            <path
+                                d="M7.49982 5.87679C8.15607 5.87679 8.77482 6.13276 9.23732 6.59475C9.69982 7.06297 9.95607 7.68104 9.95607 8.33032C9.94982 9.01081 9.67482 9.62263 9.23107 10.0659C8.78732 10.5091 8.17482 10.7838 7.49982 10.7838C6.84357 10.7838 6.23107 10.5279 5.76232 10.0659C5.29982 9.59766 5.04357 8.98584 5.04357 8.33032C5.03732 7.68104 5.29357 7.06922 5.75607 6.60099C6.22482 6.13276 6.84357 5.87679 7.49982 5.87679ZM7.49982 6.81325C7.09357 6.81325 6.71232 6.96933 6.41857 7.26275C6.13107 7.54993 5.97482 7.93076 5.98107 8.32407V8.33032C5.98107 8.73612 6.13732 9.11694 6.42482 9.40412C6.71232 9.6913 7.09357 9.84738 7.49982 9.84738C8.33732 9.84738 9.01232 9.16689 9.01857 8.33032C9.01857 7.92452 8.86232 7.54369 8.57482 7.25651C8.28732 6.96933 7.90607 6.81325 7.49982 6.81325ZM11.0061 5.72696C11.3186 5.72696 11.5748 5.98292 11.5748 6.29508C11.5748 6.60723 11.3186 6.85695 11.0061 6.85695C10.6936 6.85695 10.4436 6.60723 10.4436 6.29508C10.4436 5.98292 10.6936 5.72696 11.0061 5.72696Z"
+                                fill="white" />
+                            <path opacity="0.5"
+                                d="M10.9 3.89775L10.8375 3.76041C10.6687 3.40455 10.475 2.99251 10.3562 2.75527C10.0687 2.1934 9.575 1.88124 8.96875 1.875H6.025C5.41875 1.88124 4.93125 2.1934 4.64375 2.75527C4.51875 3.00499 4.30625 3.45449 4.13125 3.82284L4.09375 3.89775C4.075 3.9477 4.025 3.97267 3.975 3.97267C2.46875 3.97267 1.25 5.19631 1.25 6.69464V10.403C1.25 11.9014 2.46875 13.125 3.975 13.125H11.025C12.525 13.125 13.75 11.9014 13.75 10.403V6.69464C13.75 5.19631 12.525 3.97267 11.025 3.97267C10.9688 3.97267 10.925 3.94145 10.9 3.89775Z"
+                                fill="white" />
+                        </svg>
+                        <p>5 Foto</p>
+                    </div>
                     <!-- <img src="/assets/images/thumbnail-artikel-6.png" alt=""> -->
-                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-6.png)"></div>
+                    <div class="article-image" style="background-image: url(/assets/images/thumbnail-artikel-6.png)">
+                    </div>
                     <div class="content">
                         <h1>BTN Jakarta Run 2023 Dorong dan Geliatkan Sport Tourism Jakarta</h1>
                         <p>Minggu, 12 Nov 2023 11:55 WIB</p>
@@ -368,6 +452,7 @@
                 </div>
 
             </div>
+
         </div>
         <a href="https://www.detik.com/search/searchall?query=fun+run&siteid=2" class="daftar-sekarang-button">
             LIHAT LEBIH BANYAK

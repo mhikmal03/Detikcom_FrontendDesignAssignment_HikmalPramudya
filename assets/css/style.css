@@ -160,11 +160,12 @@ a {
 }
 
 .special-performance .event .card:hover {
-    animation: gradientAnimation 5s infinite alternate;
+    animation: gradientAnimation 2s infinite alternate;
     /* Add gradient animation on hover */
 }
 
 .special-performance .event .card h1 {
+    cursor: pointer;
     font-weight: var(--font-black);
     font-size: 24px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -434,6 +435,12 @@ a {
 }
 
 
+.carousel-control {
+    display: none;
+}
+
+
+
 
 .related-article {
     width: 100%;
@@ -505,6 +512,7 @@ a {
 }
 
 
+
 .card-article {
     width: 100%;
     height: 100%;
@@ -521,8 +529,8 @@ a {
 }
 
 .article-image {
-    border-radius: 16px; /* Optional: Add border-radius if desired */
-    width: 100px; 
+    border-radius: 16px;
+    width: 100px;
     height: 100px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -554,6 +562,9 @@ a {
     font-weight: var(--font-medium);
 
 }
+
+
+
 
 
 
@@ -731,6 +742,14 @@ footer p {
     .galeri-sudirman-run {
         font-size: 36px;
     }
+    .carousel-control {
+        display: block;
+        position: absolute;
+        top: 240px;
+        padding: 40px;
+        width: fit-content;
+        height: fit-content;
+    }
 
     .related-article {
         padding: 163px 10% 399px 10%;
@@ -771,7 +790,7 @@ footer p {
         color: #FF9A3C;
     }
 
-    
+
 
     .card-article {
         flex: 0 0 calc(33.333% - 35px);
@@ -785,7 +804,7 @@ footer p {
     .card-article img {
         width: 100%;
         height: 75%;
-        
+
     }
 
     .article-image {
@@ -796,14 +815,38 @@ footer p {
         background-size: cover;
         background-position: center;
     }
-    
+
 
     .article-image:hover {
         background-size: 120%;
         background-position: center;
     }
 
-    
+    .hidden {
+        display: none;
+    }
+
+    #profile-icon {
+        position: absolute;
+        right: 15px;
+        top: 16px;
+        border-radius: 5px;
+        background: rgba(33, 36, 39, 0.50);
+        padding: 5px;
+        align-items: center;
+        gap: 3px; 
+
+    }
+
+    #profile-icon p {
+        color: white;
+        font-size: 12px;
+    }
+
+
+
+
+
 
     footer {
         align-items: start;
